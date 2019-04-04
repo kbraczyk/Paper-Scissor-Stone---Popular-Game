@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #000;
+    color: white;
+}
+
+body {
+    background: url(../images/darkness.png) #000 repeat;
+    background-size: auto;
+    font: 20px 'Merienda', cursive;
+}
+
+#web,
+.welcome,
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#web {
+    max-width: 960px;
+    height: 100vh;
+    background: url(/images/playstation-pattern.png) #fff repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 42px;
+    color: rgb(136, 7, 7);
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 2px 1px 2px #000;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+.game {
+    display: none;
+    margin: 20px;
+}
+
+.game div {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.game h2,
+h3 {
+    font-size: 30px;
+    text-shadow: 1px 1px 3px whitesmoke;
+}
+
+form {
+    margin: 20px;
+    text-align: left;
+    font-size: 24px;
+    padding-left: 10px;
+
+}
+
+.nick {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(136, 7, 7);
+    text-transform: uppercase;
+}
+
+.nick::after {
+    content: " - make Your choise";
+    text-transform: none;
+    color: #000;
+}
+
+.game div img {
+    display: none;
+    width: 150px;
+    height: auto;
+}
+
+.welcome {
+    margin-top: 100px;
+}
+
+input,
+button {
+    color: rgb(243, 243, 243);
+    text-align: center;
+}
+
+.welcome input {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(75, 75, 75);
+    border: none;
+    font-size: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+
+button {
+    background-color: rgb(136, 7, 7);
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+    box-shadow: 2px 5px 10px rgb(136, 7, 7);
+    transition: 1s ease all;
+    width: 275px;
+}
+
+button:hover {
+    transition: 1s ease all;
+    transform: translateY(5px);
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+form label:hover {
+    color: rgb(136, 7, 7);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.result {
+    display: none;
+    flex-direction: column;
+}
+
+.player-change::before {
+    content: "Your change: "
+}
+
+.cpu-change::before {
+    content: "CPU change: "
+}

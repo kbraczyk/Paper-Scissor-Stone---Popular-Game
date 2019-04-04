@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Paper, Scissors, Stone - Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+</head>
+
+<body>
+    <div id="web">
+        <header>
+            <h1>Paper, Scissors, Stone - Popular Game</h1>
+        </header>
+        <section class="welcome">
+            <h3>Hi - let's play the game</h3>
+            <input type="text" name="player" id="playerName" placeholder="Enter nickname :) " />
+            <button id="start-game">Start the game</button>
+        </section>
+
+        <section class="game">
+            <p class="game-title nick"></p>
+            <div class="game-main">
+                <form>
+                    <label class="" for="paper">Paper</label>
+                    <input type="radio" name="radio" id="paper" /><br>
+                    <label class="" for="scissor">Scissors</label>
+                    <input type="radio" name="radio" id="scissor" /><br>
+                    <label class="" for="stone">Stone</label>
+                    <input type="radio" name="radio" id="stone" />
+                </form>
+                <img>
+            </div>
+            <button id="game-result-button">Check</button>
+        </section>
+        <section class="result">
+            <p class="player-change"></p>
+            <p class="cpu-change"></p>
+            <h2 class="game-result"></h2>
+        </section>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
