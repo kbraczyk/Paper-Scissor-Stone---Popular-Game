@@ -14,7 +14,7 @@
 body {
     background: url(../images/darkness.png) #000 repeat;
     background-size: auto;
-    font: 20px 'Merienda', cursive;
+    font: 400 20px 'Merienda', cursive;
 }
 
 #web,
@@ -29,18 +29,20 @@ body {
     max-width: 960px;
     height: 100vh;
     background: url(/images/playstation-pattern.png) #fff repeat;
-    background-size: contain;
+    background-size: cover;
     margin: 0 auto;
 }
 
-h1 {
+.page-header {
+    padding: 10px;
+}
+
+.page-header h1 {
     font-size: 42px;
     color: rgb(136, 7, 7);
-    margin-bottom: 20px;
+    margin: 20px 0;
     letter-spacing: 3px;
     text-shadow: 2px 1px 2px #000;
-    padding: 15px;
-    margin-bottom: 50px;
 }
 
 .game {
@@ -54,8 +56,8 @@ h1 {
     margin: 20px;
 }
 
-.game h2,
-h3 {
+.game-header h2,
+.result h2 {
     font-size: 30px;
     text-shadow: 1px 1px 3px whitesmoke;
 }
@@ -84,7 +86,7 @@ form {
 .game div img {
     display: none;
     width: 150px;
-    height: auto;
+    height: 100%;
 }
 
 .welcome {
@@ -95,6 +97,7 @@ input,
 button {
     color: rgb(243, 243, 243);
     text-align: center;
+    outline: none;
 }
 
 .welcome input {

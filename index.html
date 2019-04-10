@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Paper, Scissors, Stone - Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper, Scissor, Stone - Game</title>
     <link href="https://fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body>
     <div id="web">
-        <header>
-            <h1>Paper, Scissors, Stone - Popular Game</h1>
+        <header class="page-header">
+            <h1>Paper, Scissor, Stone - Popular Game</h1>
         </header>
         <section class="welcome">
-            <h3>Hi - let's play the game</h3>
+            <header class="section-header">
+                <h2>Hi - let's play the game</h2>
+            </header>
             <input type="text" name="player" id="playerName" placeholder="Enter nickname :) " />
             <button id="start-game">Start the game</button>
         </section>
 
         <section class="game">
-            <p class="game-title nick"></p>
+            <header class="game-header">
+                <p class="nick"></p>
+            </header>
             <div class="game-main">
                 <form>
                     <label class="" for="paper">Paper</label>
@@ -29,7 +35,7 @@
                     <label class="" for="stone">Stone</label>
                     <input type="radio" name="radio" id="stone" />
                 </form>
-                <img>
+                <img src="" alt="">
             </div>
             <button id="game-result-button">Check</button>
         </section>
