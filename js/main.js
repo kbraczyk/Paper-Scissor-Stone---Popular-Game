@@ -2,7 +2,7 @@ const playerNick = document.querySelector('input[name="player"]');
 const startGame = document.querySelector('#start-game');
 const showResult = document.querySelector('#game-result-button');
 const choiseArr = [...document.querySelectorAll('form label')];
-const choiseImg = ['/images/papier.png', '/images/scisor.png', '/images/stone.png'];
+const choiseImg = ['images/papier.png', 'images/scisor.png', 'images/stone.png'];
 const welcomeDiv = document.querySelector('.welcome');
 const gameDiv = document.querySelector('.game');
 const resultDiv = document.querySelector(".game-result");
@@ -20,7 +20,7 @@ choiseArr.forEach((choise, i) => {
         changePlayer = choise.control.id;
         img.style.display = 'block';
         img.src = choiseImg[i];
-        document.querySelector('.result').style.display = 'none';
+        document.querySelector('.result').style.opacity = '0';
     })
 })
 
@@ -30,6 +30,7 @@ function randomChangeCpu() {
 
 function showResultGame(newColor, newMessage, player, cpu) {
     document.querySelector('.result').style.display = 'flex';
+    document.querySelector('.result').style.opacity = '1';
     document.querySelector('.player-change').textContent = player;
     document.querySelector('.cpu-change').textContent = cpu;
     resultDiv.style.color = newColor;
@@ -56,7 +57,7 @@ startGame.addEventListener('click', () => {
     if (playerNick.value) {
         document.querySelector('.nick').textContent = playerNick.value;
         welcomeDiv.style.display = 'none';
-        gameDiv.style.display = 'flex';
+        gameDiv.style.left = '50%';
     } else {
         alert('Please enter Your nick!');
     }
